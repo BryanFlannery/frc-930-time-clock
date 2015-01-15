@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainDialogController">
+   <children>
+      <ImageView fitHeight="90.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="310.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/B.E.A.R.s%20logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="238.0" layoutY="39.0" prefHeight="78.0" prefWidth="125.0" scaleX="2.0" scaleY="2.0" text="Slide Your Card To Auto Sign In/Out" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="521.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleCreateEnter" text="Add" />
+      <Button layoutX="239.0" layoutY="200.0" mnemonicParsing="false" onAction="#edit" prefHeight="51.0" prefWidth="125.0" text="Edit" />
+      <Button layoutX="239.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleManualEnter" prefHeight="51.0" prefWidth="125.0" text="Manual In/Out" AnchorPane.bottomAnchor="91.0" />
+   </children>
+</AnchorPane>

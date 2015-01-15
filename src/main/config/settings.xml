@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- settings.xml -->
+<settings>
+    <AutoHours>
+        <Monday>14400</Monday>
+        <Tuesday>14400</Tuesday>
+        <Wednesday>14400</Wednesday>
+        <Thursday>14400</Thursday>
+        <Friday>0</Friday>
+        <Saturday>32400</Saturday>
+        <Sunday>0</Sunday>
+    </AutoHours>
+    <TimeIncrement>900</TimeIncrement>
+    <TimeMaximum>57600</TimeMaximum>
+</settings>
+

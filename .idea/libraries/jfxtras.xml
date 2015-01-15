@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jfxtras">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/jfxtras-agenda-8.0-r2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/jfxtras-common-8.0-r2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/jfxtras-controls-8.0-r2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/jfxtras-fxml-8.0-r2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

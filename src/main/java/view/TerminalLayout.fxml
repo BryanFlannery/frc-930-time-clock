@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="720.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TerminalController">
+   <children>
+      <SplitPane dividerPositions="0.3309178743961353" layoutX="540.0" layoutY="212.0" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutX="62.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleClockIn" prefHeight="100.0" prefWidth="200.0" text="Sign In" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="40.0" />
+                  <Button layoutX="35.0" layoutY="578.0" mnemonicParsing="false" onAction="#handleClockOut" prefHeight="100.0" prefWidth="200.0" text="Sign Out" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.09497206703910614" orientation="VERTICAL" prefHeight="718.0" prefWidth="636.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="45.0" prefWidth="549.0">
+                           <children>
+                              <HBox layoutX="160.0" layoutY="283.0" pickOnBounds="false" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                 <children>
+                                    <Button layoutX="160.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleNew" text="New..." />
+                                    <Button layoutX="245.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleEdit" text="Edit..." />
+                                    <Button layoutX="339.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleDeleteEntry" text="Delete" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="14.0" layoutY="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="14.0" text="Welcome back " AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                                    <Label fx:id="name" layoutX="109.0" layoutY="14.0" text="Name" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="532.0" prefWidth="549.0">
+                           <children>
+                              <TableView fx:id="entryTable" layoutX="7.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="date" prefWidth="131.0" text="Date" />
+                                    <TableColumn fx:id="timeIn" prefWidth="116.0" text="Time In" />
+                                    <TableColumn fx:id="timeOut" minWidth="0.0" prefWidth="128.0" text="Time Out" />
+                                    <TableColumn fx:id="type" minWidth="0.0" prefWidth="173.0" text="Type" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
