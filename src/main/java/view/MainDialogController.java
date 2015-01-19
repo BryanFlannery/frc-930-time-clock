@@ -8,7 +8,6 @@ import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -83,7 +82,8 @@ public class MainDialogController {
         // main content region
         dlg.setResizable(false);
         dlg.setIconifiable(false);
-        dlg.setGraphic(new ImageView(MainApp.class.getResource("/resources/login.png").toString()));
+
+        dlg.setGraphic(new ImageView(MainApp.class.getResource("../resources/login.png").toString()));
         dlg.setContent(content);
         dlg.getActions().addAll(actionLogin, Dialog.Actions.CANCEL);
         validate();
